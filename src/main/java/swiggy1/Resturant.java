@@ -10,5 +10,19 @@ public class Resturant {
     public Address address;
     public List<Dish> dishList;
 
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+
+        if (this.getClass() != obj.getClass()) {
+            return false;
+        }
+
+        Resturant resturant =(Resturant) obj;
+      return this.resturantName.equals(resturantName);
+
+
+
+    }
 
 }

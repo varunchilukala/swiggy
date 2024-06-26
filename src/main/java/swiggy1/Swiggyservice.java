@@ -4,16 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Swiggyservice {
+  List<Resturant> resturantList;
 
-    List<Resturant> resturantList;
-
-    public List<Resturant>getresturant( ){
+    public List<Resturant> getresturant( ){
         Resturant resturant1=new Resturant();
-
-      List<Resturant> resturantList1 =new ArrayList<>();
-      resturantList1.add(resturant1);
-
-
 
         Address address =new Address();
         address.area="kkroad";
@@ -44,6 +38,15 @@ public class Swiggyservice {
 
 
         Resturant resturant2=new Resturant();
+
+
+      Address address2 =new Address();
+      address2.area="mgroad";
+      address2.roadNumber="6";
+      address2.FlatNumber="404";
+
+
+
         resturant2.resturantName="kfc";
         resturant2.rating=4.6;
         resturant2.address=address;
@@ -62,9 +65,12 @@ public class Swiggyservice {
 
         resturant2.dishList=dishList1;
 
-
-
         Resturant resturant3=new Resturant();
+        Address address3 =new Address();
+        address3.area="gandhiroad";
+        address3.roadNumber="9";
+        address3.FlatNumber="565";
+
         resturant3.resturantName="mcdonald's";
         resturant3.rating=4.3;
         resturant3.address=address;
@@ -85,11 +91,13 @@ public class Swiggyservice {
 
         resturant3.dishList=dishList2;
 
+      List<Resturant> resturantList1 =new ArrayList<>();
+      resturantList1.add(resturant1);
+      resturantList1.add(resturant2);
+      resturantList1.add(resturant3);
 
       return resturantList;
 
-
     }
-
 
 }
